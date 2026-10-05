@@ -1,0 +1,42 @@
+{
+  "standardVersion": "1.0.0",
+  "repository": "SabineMR/tracker",
+  "defaultBranch": "main",
+  "adapter": "typescript",
+  "scopes": [
+    "src"
+  ],
+  "absentScopes": [],
+  "excludeSegments": [],
+  "supporting": [
+    ".github/workflows/building-reference.yml",
+    "AGENTS.md",
+    "package-lock.json",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "parserSearch": [
+    "."
+  ],
+  "planned": [],
+  "limits": [
+    "Only reviewed declared exports/classes, explicit member/type grammar and literal module connections are semantically mapped. Function bodies, inferred types, computed/aliased links and external package behavior remain unverified.",
+    "Database schemas/migrations and platform wrappers are indexed supporting inputs; their constraints, live data and runtime behavior are not inferred.",
+    "Generated/vendor/cache/test/fixture/secret/data sources are excluded; files outside the stated scopes remain unmapped.",
+    "Runtime behavior not validated; this map cannot promote requirements, prove app-suite success, hosted activation or deployment."
+  ],
+  "commands": {
+    "root:dev": {
+      "command": "vite",
+      "cwd": ".",
+      "watch": true,
+      "startup": false
+    },
+    "root:build": {
+      "command": "vite build",
+      "cwd": ".",
+      "watch": false,
+      "startup": false
+    }
+  }
+}

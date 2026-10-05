@@ -1,0 +1,9 @@
+{
+  "state": "ready",
+  "inputDigest": "48f26808da9a1fcfce7eaf69e17643a77999f409ca10db46d0d8da78e808c102",
+  "outputHashes": {
+    "map.json": "eaaa8381613988feaa37b4deb403839c7c8bca64f3a11fe74ceb6cd765d3b73a",
+    "index.html": "4a6d4dfb85428f19d2bf401a602b8e4e4aa5a0924122fc972624b76cbbb6242a",
+    "provenance.json": "b386b7d68ecab2545dad17b5abba2ba5719a2f89c949440cb82125ed31a5e9e4"
+  }
+}

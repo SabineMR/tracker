@@ -1,0 +1,785 @@
+{
+  "standardVersion": "1.0.0",
+  "repository": "SabineMR/tracker",
+  "coverage": "bounded source vocabulary; not runtime semantics",
+  "modules": {
+    "src/App.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "./components/DebtChart",
+        "./components/DebtForm",
+        "./components/DebtList",
+        "./components/ExportPDF",
+        "./components/Header",
+        "./components/Summary",
+        "./components/WorkSessionForm",
+        "./components/WorkSessionList",
+        "./store/debtStore",
+        "react",
+        "react-hot-toast"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/DebtChart.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "chart.js",
+        "lucide-react",
+        "react",
+        "react-chartjs-2"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/DebtForm.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "../types",
+        "date-fns",
+        "lucide-react",
+        "react",
+        "react-hot-toast"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/DebtList.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "../utils/formatters",
+        "date-fns",
+        "lucide-react",
+        "react"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/ExportPDF.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "../utils/formatters",
+        "date-fns",
+        "jspdf",
+        "lucide-react",
+        "react"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/Header.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/Summary.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "../utils/formatters",
+        "lucide-react",
+        "react"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/WorkSessionForm.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "../types",
+        "../utils/formatters",
+        "date-fns",
+        "lucide-react",
+        "react",
+        "react-hot-toast"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/components/WorkSessionList.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [
+        {
+          "name": "default",
+          "kind": "assignment",
+          "members": []
+        }
+      ],
+      "imports": [
+        "../store/debtStore",
+        "../utils/formatters",
+        "date-fns",
+        "lucide-react",
+        "react"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/index.css": {
+      "kind": "indexed supporting source; semantics not parsed",
+      "exports": [],
+      "imports": [],
+      "dynamicLinks": 0
+    },
+    "src/main.tsx": {
+      "kind": "source module",
+      "grammar": "native TSX/JSX grammar",
+      "exports": [],
+      "imports": [
+        "./App.tsx",
+        "./index.css",
+        "react",
+        "react-dom/client"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/store/debtStore.ts": {
+      "kind": "source module",
+      "grammar": "native TS/JS grammar",
+      "exports": [
+        {
+          "name": "useDebtStore",
+          "kind": "binding",
+          "type": null,
+          "members": [],
+          "params": [],
+          "returnType": null
+        }
+      ],
+      "imports": [
+        "../types",
+        "date-fns",
+        "zustand",
+        "zustand/middleware"
+      ],
+      "dynamicLinks": 0
+    },
+    "src/types/index.ts": {
+      "kind": "source module",
+      "grammar": "native TS/JS grammar",
+      "exports": [
+        {
+          "name": "DebtItem",
+          "kind": "interface",
+          "members": [
+            "amount",
+            "date",
+            "description",
+            "id"
+          ],
+          "memberTypes": [
+            {
+              "name": "id",
+              "type": "473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "description",
+              "type": "473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "amount",
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "date",
+              "type": "473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            }
+          ],
+          "heritage": [],
+          "typeParameters": []
+        },
+        {
+          "name": "WorkSession",
+          "kind": "interface",
+          "members": [
+            "amountApplied",
+            "date",
+            "fullPayment",
+            "hours",
+            "id"
+          ],
+          "memberTypes": [
+            {
+              "name": "id",
+              "type": "473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "date",
+              "type": "473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "hours",
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "fullPayment",
+              "type": "bf84d3d60e93cc959793d5c9d8308fbcf868f673cb032f461c9676f0480cc29e",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "amountApplied",
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            }
+          ],
+          "heritage": [],
+          "typeParameters": []
+        },
+        {
+          "name": "Summary",
+          "kind": "interface",
+          "members": [
+            "remainingBalance",
+            "totalDebt",
+            "totalPaid"
+          ],
+          "memberTypes": [
+            {
+              "name": "totalDebt",
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "totalPaid",
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "remainingBalance",
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            }
+          ],
+          "heritage": [],
+          "typeParameters": []
+        },
+        {
+          "name": "ChartData",
+          "kind": "interface",
+          "members": [
+            "debt",
+            "labels",
+            "repayment"
+          ],
+          "memberTypes": [
+            {
+              "name": "labels",
+              "type": "5444db16183998581fdae2fe8d9468bfb80c4220466e9739c1cb194b0901138f",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "debt",
+              "type": "84dc8cbe6b0e121d70dabbcc78b18dc081618e1d569d8b2433b19c760ad339e8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            },
+            {
+              "name": "repayment",
+              "type": "84dc8cbe6b0e121d70dabbcc78b18dc081618e1d569d8b2433b19c760ad339e8",
+              "optional": false,
+              "params": [],
+              "modifiers": []
+            }
+          ],
+          "heritage": [],
+          "typeParameters": []
+        }
+      ],
+      "imports": [],
+      "dynamicLinks": 0
+    },
+    "src/utils/formatters.ts": {
+      "kind": "source module",
+      "grammar": "native TS/JS grammar",
+      "exports": [
+        {
+          "name": "formatCurrency",
+          "kind": "binding",
+          "type": null,
+          "members": [],
+          "params": [
+            {
+              "name": "amount",
+              "optional": false,
+              "type": "12886f9d00055adf24c40579e22d31b2b45f2023f892954ffd5567beb60825f8",
+              "rest": false,
+              "defaulted": false
+            }
+          ],
+          "returnType": "473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8"
+        }
+      ],
+      "imports": [],
+      "dynamicLinks": 0
+    },
+    "src/vite-env.d.ts": {
+      "kind": "source module",
+      "grammar": "native TS/JS grammar",
+      "exports": [],
+      "imports": [],
+      "dynamicLinks": 0
+    }
+  },
+  "connections": [
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/DebtChart",
+      "to": "src/components/DebtChart.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/DebtForm",
+      "to": "src/components/DebtForm.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/DebtList",
+      "to": "src/components/DebtList.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/ExportPDF",
+      "to": "src/components/ExportPDF.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/Header",
+      "to": "src/components/Header.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/Summary",
+      "to": "src/components/Summary.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/WorkSessionForm",
+      "to": "src/components/WorkSessionForm.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./components/WorkSessionList",
+      "to": "src/components/WorkSessionList.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "./store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/App.tsx",
+      "literal": "react-hot-toast",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtChart.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/DebtChart.tsx",
+      "literal": "chart.js",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtChart.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtChart.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtChart.tsx",
+      "literal": "react-chartjs-2",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtForm.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/DebtForm.tsx",
+      "literal": "../types",
+      "to": "src/types/index.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/DebtForm.tsx",
+      "literal": "date-fns",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtForm.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtForm.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtForm.tsx",
+      "literal": "react-hot-toast",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtList.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/DebtList.tsx",
+      "literal": "../utils/formatters",
+      "to": "src/utils/formatters.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/DebtList.tsx",
+      "literal": "date-fns",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtList.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/DebtList.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/ExportPDF.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/ExportPDF.tsx",
+      "literal": "../utils/formatters",
+      "to": "src/utils/formatters.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/ExportPDF.tsx",
+      "literal": "date-fns",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/ExportPDF.tsx",
+      "literal": "jspdf",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/ExportPDF.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/ExportPDF.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/Header.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/Header.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/Summary.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/Summary.tsx",
+      "literal": "../utils/formatters",
+      "to": "src/utils/formatters.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/Summary.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/Summary.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "../types",
+      "to": "src/types/index.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "../utils/formatters",
+      "to": "src/utils/formatters.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "date-fns",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionForm.tsx",
+      "literal": "react-hot-toast",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionList.tsx",
+      "literal": "../store/debtStore",
+      "to": "src/store/debtStore.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/WorkSessionList.tsx",
+      "literal": "../utils/formatters",
+      "to": "src/utils/formatters.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/components/WorkSessionList.tsx",
+      "literal": "date-fns",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionList.tsx",
+      "literal": "lucide-react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/components/WorkSessionList.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/main.tsx",
+      "literal": "./App.tsx",
+      "to": "src/App.tsx",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/main.tsx",
+      "literal": "./index.css",
+      "to": "src/index.css",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/main.tsx",
+      "literal": "react",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/main.tsx",
+      "literal": "react-dom/client",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/store/debtStore.ts",
+      "literal": "../types",
+      "to": "src/types/index.ts",
+      "status": "literal local module link"
+    },
+    {
+      "from": "src/store/debtStore.ts",
+      "literal": "date-fns",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/store/debtStore.ts",
+      "literal": "zustand",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    },
+    {
+      "from": "src/store/debtStore.ts",
+      "literal": "zustand/middleware",
+      "to": null,
+      "status": "unresolved/external/alias; runtime resolution not asserted"
+    }
+  ],
+  "planned": [],
+  "context": {
+    "label": "local or branch candidate",
+    "event": null,
+    "ref": null,
+    "sha": null
+  }
+}

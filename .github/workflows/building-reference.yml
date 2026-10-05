@@ -1,0 +1,49 @@
+name: Building reference
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: building-reference-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Install locked native parser workspace
+        run: npm ci --ignore-scripts
+      - name: Test reference behavior
+        run: node --test tools/building-reference/test/*.test.mjs
+      - name: Generate and independently check exact candidate
+        run: |
+          node tools/building-reference/cli.mjs generate
+          node tools/building-reference/cli.mjs check
+          cp -R docs/building-reference "$RUNNER_TEMP/reference-first"
+          node tools/building-reference/cli.mjs generate
+          node tools/building-reference/cli.mjs check
+          diff -ru "$RUNNER_TEMP/reference-first" docs/building-reference
+      - name: Upload successful matching source reference
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: building-reference-${{ github.event_name }}-${{ github.sha }}
+          path: docs/building-reference/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Record source candidate boundary
+        if: success()
+        run: echo 'Validated source bundle for this run; use map.json context and the actual successful default-branch run/SHA before calling a download current. App/production readiness remains separate.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve failure boundary without uploading old output
+        if: failure()
+        run: echo 'Reference generation/check failed. No current bundle published; inspect source/mapping diagnostics and rerun after deliberate review.' >> "$GITHUB_STEP_SUMMARY"
