@@ -4,10 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node tools/building-reference/run.mjs root:dev",
+    "build": "node tools/building-reference/run.mjs root:build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "reference:generate": "node tools/building-reference/cli.mjs generate",
+    "reference:check": "node tools/building-reference/cli.mjs check",
+    "reference:inspect": "node tools/building-reference/cli.mjs inspect",
+    "reference:test": "node --test tools/building-reference/test/*.test.mjs"
   },
   "dependencies": {
     "chart.js": "^4.4.1",
