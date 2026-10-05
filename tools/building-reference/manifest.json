@@ -2,7 +2,7 @@
   "standardVersion": "1.0.0",
   "repository": "SabineMR/tracker",
   "ownedToolHashes": {
-    "tools/building-reference/README.md": "086f56daa569ff78f19593cc6c9980cd2c564bb52d6fa0c207d9fed77a705881",
+    "tools/building-reference/README.md": "0b75088f6780c6b2279c3139baba84dcf79ca880a9951d9f003b67f65b7ffc85",
     "tools/building-reference/cli.mjs": "05d12627135b7ae397f4e209d5e5796f378358e5ee2c0b0f468c066ea94be840",
     "tools/building-reference/config.json": "598d847db333c448c9e13585101d4ae159becc8cf7639d45ae73718683f98065",
     "tools/building-reference/core.mjs": "238f2fc989ae3d2a2eed712d53d5755cedde12479cc8d4c180d345aa96dbbdaa",
