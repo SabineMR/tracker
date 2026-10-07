@@ -9,7 +9,6 @@
   "absentScopes": [],
   "excludeSegments": [],
   "supporting": [
-    ".github/workflows/building-reference.yml",
     "AGENTS.md",
     "package-lock.json",
     "package.json",
