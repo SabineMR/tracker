@@ -2,10 +2,10 @@
   "standardVersion": "1.0.0",
   "repository": "SabineMR/tracker",
   "ownedToolHashes": {
-    "tools/building-reference/README.md": "0b75088f6780c6b2279c3139baba84dcf79ca880a9951d9f003b67f65b7ffc85",
+    "tools/building-reference/README.md": "e148a138d50c8d902f75610d82e801e29f060e78aa4e22c427767cf83891139f",
     "tools/building-reference/cli.mjs": "05d12627135b7ae397f4e209d5e5796f378358e5ee2c0b0f468c066ea94be840",
-    "tools/building-reference/config.json": "598d847db333c448c9e13585101d4ae159becc8cf7639d45ae73718683f98065",
-    "tools/building-reference/core.mjs": "238f2fc989ae3d2a2eed712d53d5755cedde12479cc8d4c180d345aa96dbbdaa",
+    "tools/building-reference/config.json": "f6c11f370aacd82c3ee740e394a03e4b8823678846cf19b1092f16d97bcf4921",
+    "tools/building-reference/core.mjs": "ddb18419c69eabe9ed25df5b2d36cf5dd473c0290a1d9e5459eeaccfbc7f347f",
     "tools/building-reference/mapping.json": "cac87d32062428b1c8e0290e31266bc2abbd0dd07d88c45c290f35c2d93bb8ef",
     "tools/building-reference/run.mjs": "a0bbe922171464c776a5256346009f6738da5632cad03baada0a6ecf102ad108",
     "tools/building-reference/test/reference.test.mjs": "26f6ef7cd55dafdeb107c1d74704fb763ad39efa79111a2c8c3a97065714acce",

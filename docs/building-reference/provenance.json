@@ -1,8 +1,7 @@
 {
-  "inputDigest": "7c0b399d2db7b4cd03e5befa7e0138a895333c58c1cf926b3304965fb11d93ce",
+  "inputDigest": "03e611a2743cfc6ba5b9ae976346dee3d2ef2b98deb3777e8b65351cc8e6d5e2",
   "hashes": {
-    ".github/workflows/building-reference.yml": "580cfdcd5b83fa71dcb8316e32efb1e6a6c9bee9e5e7958e35123d67e53f2d66",
-    "AGENTS.md": "5e2e8c85d589b1dcfe85628b88d2af4d655ae13887f636bb13a03462be1bcc25",
+    "AGENTS.md": "ff11b8128c0b7b2d5e4ff00021aecea814a216a9d089a78a154e930dd37fe137",
     "package-lock.json": "ee58e942889502f104d961294eb1b5e80bf844cf254f0d2a8a298acf065d71e4",
     "package.json": "b1ab17f3a4547617795019f76180433dae1856fa03d5605fff9d5f0a9aeb4c08",
     "src/App.tsx": "7a7af35b1272b17293c5405ea7a722ed06b16a7bf928496279199df70bc8fd78",
@@ -20,14 +19,14 @@
     "src/types/index.ts": "4f158dec3ec4d7d0768c6dcf4d8800ec601af9af9a5c0bd3cf1bd516ef87a2b3",
     "src/utils/formatters.ts": "526806b3e09638d5008d2eec0bd6d14168b5f4d0eb45e7bc98a24b1e14bbb9bf",
     "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
-    "tools/building-reference/README.md": "086f56daa569ff78f19593cc6c9980cd2c564bb52d6fa0c207d9fed77a705881",
+    "tools/building-reference/README.md": "e148a138d50c8d902f75610d82e801e29f060e78aa4e22c427767cf83891139f",
     "tools/building-reference/cli.mjs": "05d12627135b7ae397f4e209d5e5796f378358e5ee2c0b0f468c066ea94be840",
-    "tools/building-reference/config.json": "598d847db333c448c9e13585101d4ae159becc8cf7639d45ae73718683f98065",
-    "tools/building-reference/core.mjs": "238f2fc989ae3d2a2eed712d53d5755cedde12479cc8d4c180d345aa96dbbdaa",
-    "tools/building-reference/manifest.json": "c61aff4d107f4ee9efa89f4f7ef9f01840a12634838532ccdc43b3152fe7b0f5",
+    "tools/building-reference/config.json": "f6c11f370aacd82c3ee740e394a03e4b8823678846cf19b1092f16d97bcf4921",
+    "tools/building-reference/core.mjs": "ddb18419c69eabe9ed25df5b2d36cf5dd473c0290a1d9e5459eeaccfbc7f347f",
+    "tools/building-reference/manifest.json": "d5c36fa82fd0746d3b3fe1f7879318831e3226f9814401954cc688f626417a85",
     "tools/building-reference/mapping.json": "cac87d32062428b1c8e0290e31266bc2abbd0dd07d88c45c290f35c2d93bb8ef",
     "tools/building-reference/run.mjs": "a0bbe922171464c776a5256346009f6738da5632cad03baada0a6ecf102ad108",
-    "tools/building-reference/test/reference.test.mjs": "ddbfda821a137c676db94457528a83b88cdf504ad3c1586c6b49765dcd4987c8",
+    "tools/building-reference/test/reference.test.mjs": "26f6ef7cd55dafdeb107c1d74704fb763ad39efa79111a2c8c3a97065714acce",
     "tools/building-reference/watch.mjs": "ef839fafaaf4e9e62cfbec49d524ea353f2095e7c7ac46a5a3601c414ce4d09f",
     "tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
   },
@@ -37,26 +36,19 @@
     "entrySha256": "f316520790d4db220a10d890c5f85310e26a1bd3c104b8d3b5eb62ba0491651b"
   },
   "git": {
-    "head": "209e67327392656e36e0fde8809d124246c9e6f7",
-    "branch": "codex/building-reference-rollout-20261004",
+    "head": "a0c404ad753ededa939833e0613afeb7a279b68e",
+    "branch": "codex/remove-github-actions-20261007",
     "dirtyPaths": [
-      ".github/workflows/building-reference.yml",
       "AGENTS.md",
-      "package.json",
       "tools/building-reference/README.md",
-      "tools/building-reference/cli.mjs",
       "tools/building-reference/config.json",
       "tools/building-reference/core.mjs",
-      "tools/building-reference/manifest.json",
-      "tools/building-reference/mapping.json",
-      "tools/building-reference/run.mjs",
-      "tools/building-reference/test/reference.test.mjs",
-      "tools/building-reference/watch.mjs"
+      "tools/building-reference/manifest.json"
     ],
     "scope": "exact reference inputs including untracked/ignored bytes; unrelated checkout changes excluded"
   },
   "outputHashes": {
     "map.json": "eaaa8381613988feaa37b4deb403839c7c8bca64f3a11fe74ceb6cd765d3b73a",
-    "index.html": "fddfd0cd9dac36dc772bee535d15c118fed8546c5a76546c8fc11a9a188d7a07"
+    "index.html": "9caaad082a4f8d1171e722aedeceb975dfcd47a27b1657aafe63daf0331aa598"
   }
 }
